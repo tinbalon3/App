@@ -1,0 +1,116 @@
+<div class="back">
+  <i class="fa-solid fa-angle-left"></i>
+  <span>Trở lại</span>
+</div>
+<div class="flex-center">
+  <div class="card" *ngIf="tab==1">
+    <div class="--mg--bottom--20">
+      <div class="row">
+        <div class="col-md-7 flex-center-ver">
+          <h4 class="txBlue --col--3">Thêm sản phẩm</h4>
+        </div>
+        <div class="col-md-5 flex-center-ver listButton">
+          <div class="button bgBlue txWhite" (click)="tab=0">
+            <i class="fa-regular fa-floppy-disk"></i>
+            <span>Lưu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="addProduct">
+      <div class="row flex-center-ver">
+        <div class="col-md-2">
+          <img src="../../assets/img/icons8-image-64.png" alt="">
+        </div>
+        <div class="col-md-10">
+          <div>
+            <span class="fw--bold row">Tên sản phẩm*</span>
+            <input type="text" placeholder="Nhập tên sản phẩm">
+          </div>
+          <div class="row col-md-12">
+            <div class="col-md-6 --group">
+              <div>
+                <span class="fw--bold row">Danh mục*</span>
+                <select name="" id="" class="--border">
+                  <option value="" disabled="disabled" selected="selected">Vui lòng chọn danh mục</option>
+                  <option value="">20 / trang</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 --group">
+              <span class="fw--bold row">Thương mại</span>
+              <input type="text" placeholder="Nhập tên sản phẩm" >
+            </div>
+          </div>
+          <div class="row --mg--top--30">
+            <div class="flex-center-ver">
+              <input type="checkbox" id="filterBYAttributeOfProduct">
+              <span>Phân loại theo thuộc tính hàng hóa</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <span class="fw--bold row">Giá nhập*</span>
+            <input type="text" placeholder="0 VND">
+          </div>
+          <div>
+            <span class="fw--bold row">Giá bán buôn/bán sỉ*</span>
+            <input type="text" placeholder="0 VND">
+          </div>
+          <div>
+            <span class="fw--bold row">Giá bán lẻ*</span>
+            <input type="text" placeholder="0 VND">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <span class="fw--bold row">Đơn vị*</span>
+            <div class="row --groupItem">
+              <div class="col-md-8">
+                <input type="text" placeholder="Nhập đơn vị" >
+              </div>
+              <div class="col-md-4">
+                <div class="--border button"><i class="fa-solid fa-list-ol"></i><span>Thêm đơn vị</span></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="fw--bold row">Barcode</span>
+            <div class="row flex-center-ver">
+              <div class="col-md-11"><input type="text" placeholder="Nhập barcode hoặc sử dụng máy scan"></div>
+              <div class="col-md-1">
+                <i class="fa-solid fa-rotate-right"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="fw--bold row">Số lượng cảnh báo hết hàng*</span>
+            <input type="text" placeholder="Nhập số lượng cảnh báo">
+          </div>
+        </div>
+      </div>
+      <div class="row --mg--top--10">
+        <div class="--groupItem">
+          <input type="checkbox">
+          <span>Cho phép bán</span>
+        </div>
+        <div class="--groupItem">
+          <input type="checkbox">
+          <span>Bán nhanh</span>
+        </div>
+        <div class="--groupItem">
+          <input type="checkbox">
+          <span>Lô, hạn sử dụng</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>

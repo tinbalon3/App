@@ -1,0 +1,51 @@
+<!-- <div class="overbox">
+
+
+  <div class="go_login" (click)="goLogin()"> <i class="fa-solid fa-chevron-left"></i>Trở về đăng nhập</div>
+  <div class="title">Đăng kí</div>
+
+  <div class="input">
+     <label for="regname">Email</label>
+     <input type="text" name="regname" #email>
+     <span class="spin"></span>
+  </div>
+
+  <div class="input">
+     <label for="regpass">Password</label>
+     <input type="password" name="regpass" #password>
+     <span class="spin"></span>
+  </div>
+
+
+
+  <div class="button">
+     <button (click)="onSignup(email.value,password.value)"><span>NEXT</span></button>
+  </div>
+
+
+</div> -->
+<div class="go_login" (click)="goLogin()"> <i class="fa-solid fa-chevron-left"></i>Trở về đăng nhập</div>
+<div class="materialContainer">
+  <div class="box">
+     <div class="title">Đăng ký</div>
+     <div class="input">
+        <label for="name" >Email</label>
+        <input type="text" id="name" name="name" #email >
+        <span class="spin"></span>
+     </div>
+
+     <div class="input">
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass"#password >
+        <span class="spin"></span>
+     </div>
+
+     <div class="button login">
+        <button (click)="onSignup(email.value,password.value)" ><span>Đăng ký</span> <i class="fa fa-check"></i></button>
+     </div>
+
+
+
+  </div>
+</div>
+

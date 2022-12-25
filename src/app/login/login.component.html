@@ -1,0 +1,24 @@
+<div class="materialContainer">
+  <div class="box">
+     <div class="title">LOGIN</div>
+     <div class="input">
+        <label for="name" >Email</label>
+        <input type="text" id="name" name="name" #email >
+        <span class="spin"></span>
+     </div>
+
+     <div class="input">
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass"#password >
+        <span class="spin"></span>
+     </div>
+
+     <div class="button login">
+        <button (click)="onSignIn(email.value,password.value)"><span>GO</span> <i class="fa fa-check"></i></button>
+     </div>
+
+     <p (click)="registerlink()" class="pass-forgot">Đăng kí</p>
+
+  </div>
+</div>
+
